@@ -26,12 +26,12 @@ export default function Contact({}: Props) {
       >
         Contact Me
       </motion.h3>
-        <div className="absolute z-0 left-0">
+        <div className="absolute hidden md:block z-0 left-0">
          <Image src={contactimg}/>
         </div>
 
-          <form className="border backdrop-blur-lg relative z-10 border-white px-12 py-8 " method="post">
-            <div className="w-full flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+          <form className="backdrop-grayscale backdrop-blur-sm border md:bg-transparent w-full md:w-auto bg-neutral-800 md:b  relative z-10 border-white px-12 py-8 " method="post">
+            <div className="w-full justify-start flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
               <p>
                 <label className="uppercase font-light tracking-widest " htmlFor="name">Name</label>
                 <input className="text-sm py-1 px-2 bg-transparent border-b border-white ml-4 " type="text" name="name" />

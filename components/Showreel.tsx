@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import hind from "../imgs/299840913_394351786179451_4446314775862409124_n.jpeg"
+import Iframe from 'react-iframe'
 
 type Props = {};
 
@@ -25,7 +26,30 @@ export default function Showreel({}: Props) {
       >
         Showreel
       </motion.h3>
-  
+
+      <motion.div 
+      initial={{
+        opacity: 0
+      }}
+      whileInView={{
+        opacity: 1
+      }}
+      transition={{
+        duration: 2,
+        delay: 0.5
+      }}
+      viewport={{
+        once: true
+      }}
+      
+      className="mt-28 w-full h-2/5 md:h-4/5">
+      <Iframe  url="https://www.youtube.com/embed/EfaxX2f4nzk" 
+        id=""
+        className="w-full h-full md:h-full"
+        display="block"
+        position="relative"/>
+      </motion.div> 
+     
        
     </div>
   );

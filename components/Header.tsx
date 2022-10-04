@@ -24,6 +24,8 @@ export default function Header({}: Props) {
     }}
     className="flex flex-row">
         <SocialIcon url="https://www.instagram.com/issakhfilms/" fgColor="#525252" bgColor="transparent" />
+        <SocialIcon url="https://www.youtube.com/channel/UCSGwz132fEfyVSxhzLAxgRg" fgColor="#525252" bgColor="transparent" />
+
     </motion.div>
 
     <motion.p
@@ -58,9 +60,10 @@ export default function Header({}: Props) {
     transition={{
         duration: 2,
         delay: 1
-    }} className="flex flex-row items-center cursor-pointer">
-     <SocialIcon url="https://www.youtube.com/channel/UCSGwz132fEfyVSxhzLAxgRg" fgColor="#525252" bgColor="transparent" />
-
+    }} className="flex flex-row items-center cursor-pointer uppercase font-light">
+        <Link href="#contact">
+        Get in touch
+        </Link>
     </motion.div>
 
 

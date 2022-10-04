@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import hind from "../imgs/299840913_394351786179451_4446314775862409124_n.jpeg"
+import ProjecteCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 type Props = {};
 
 export default function Projects({}: Props) {
   return (
-    <div className="h-screen flex text-neutral-700 flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen flex flex-col overflow-hidden relative text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -19,14 +19,18 @@ export default function Projects({}: Props) {
           duration: 1.5,
         }}
         viewport={{
-            once: true
+          once: true,
         }}
         className="absolute top-24 uppercase tracking-[20px]"
       >
         Projects
       </motion.h3>
-  
-       
+
+      <div className="w-full h-4/5 mt-auto mb-5 space-x-5 flex overflow-x-scroll snap-x snap-mandatory">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
     </div>
   );
 }

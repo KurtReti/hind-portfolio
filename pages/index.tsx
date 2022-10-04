@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import About from '../components/About'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
@@ -44,6 +45,8 @@ const Home: NextPage = () => {
     <section id="contact" className='snap-center'>
       <Contact />
     </section>
+
+
 
       </div>
   )

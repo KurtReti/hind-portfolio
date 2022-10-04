@@ -17,7 +17,7 @@ export default function Hero({}: Props) {
         <Background />
         </div>
 
-      <div className='relative text-2xl uppercase font-light -top-32 text-white flex flex-row space-x-12 -top-10'>
+      <div className='relative text-2xl uppercase font-light -top-32 text-white flex flex-row space-x-4 md:space-x-12 -top-10'>
         <Link href="#about">
         <button className="heroButton uppercase">About</button>
         </Link>

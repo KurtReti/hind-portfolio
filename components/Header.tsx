@@ -41,9 +41,11 @@ export default function Header({}: Props) {
         duration: 2,
         delay: 1
     }}
-    className=" tracking-widest cursor-default uppercase text-2xl font-light text-neutral-600" 
+    className=" tracking-widest cursor-pointer uppercase text-2xl font-light text-neutral-600" 
 >
+    <Link href="#hero">
     Issak Hindson
+    </Link>
 </motion.p>
 
 

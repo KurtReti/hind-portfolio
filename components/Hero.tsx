@@ -13,9 +13,23 @@ export default function Hero({}: Props) {
     overflow-hidden z-0'>
 
 
-        <div className='relative -z-1'>
-        <Background />
-        </div>
+        <motion.div 
+        initial={{
+          clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)'
+        }}
+        animate={{
+          clipPath: 'polygon(50% 0, 50% 0, 52% 100%, 52% 100%)'
+        }}
+        transition={{
+          duration: 3,
+          delay: 1
+        }}
+        
+        className='absolute z-10 top-0 bg-neutral-50 h-screen w-screen'>
+          
+        </motion.div>
+        
+         <Background />
 
       <div className='relative text-2xl uppercase font-light -top-32 text-white flex flex-row space-x-4 md:space-x-12 -top-10'>
         <Link href="#about">

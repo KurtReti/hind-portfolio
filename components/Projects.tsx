@@ -2,6 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import ProjecteCard from "./ProjectCard";
 import ProjectCard from "./ProjectCard";
+import Link from "next/link";
+import HorrificallyBeautiful from "./HorrificallyBeautiful";
+import WhoAreWe from "./WhoAreWe";
+import MurderMystery from "./MurderMystery";
+import Obsession from "./Obsession";
 
 type Props = {};
 
@@ -26,11 +31,16 @@ export default function Projects({}: Props) {
         Projects
       </motion.h3>
 
-      <div className="w-full h-4/5 mt-auto mb-5 space-x-5 flex overflow-x-scroll snap-x snap-mandatory">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+
+      <div className="w-full h-4/5 mt-auto mb-10 space-x-5 flex overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-track-neutral-50 scrollbar-thumb-neutral-300">
+          <WhoAreWe />
+          <MurderMystery />
+          <HorrificallyBeautiful />
+          <Obsession />
+          
       </div>
+
+    
     </div>
   );
 }

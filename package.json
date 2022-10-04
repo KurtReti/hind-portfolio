@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "framer-motion": "^7.5.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-iframe": "^1.8.4",
+    "react-slick": "^0.29.0",
     "react-social-icons": "^5.14.0",
-    "react-youtube": "^10.0.0"
+    "react-youtube": "^10.0.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "18.7.23",
@@ -23,6 +26,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "tailwind-scrollbar": "^2.0.1",
     "typescript": "4.8.4"
   }
 }

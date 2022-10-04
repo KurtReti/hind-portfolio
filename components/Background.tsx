@@ -9,7 +9,10 @@ type Props = {}
 
 export default function Background({}: Props) {
   return (
-    <div>
+     <div>
+          
+
+    
         <div className='relative hidden xl:block'>
             <Image
                 src={heroImg}

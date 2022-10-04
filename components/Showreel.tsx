@@ -27,20 +27,8 @@ export default function Showreel({}: Props) {
         Showreel
       </motion.h3>
 
-      <motion.div 
-      initial={{
-        opacity: 0
-      }}
-      whileInView={{
-        opacity: 1
-      }}
-      transition={{
-        duration: 2,
-        delay: 0.5
-      }}
-      viewport={{
-        once: true
-      }}
+      <div 
+     
       
       className="mt-28 w-full h-2/5 md:h-4/5">
       <Iframe  url="https://www.youtube.com/embed/EfaxX2f4nzk" 
@@ -48,7 +36,7 @@ export default function Showreel({}: Props) {
         className="w-full h-full md:h-full"
         display="block"
         position="relative"/>
-      </motion.div> 
+      </div> 
      
        
     </div>

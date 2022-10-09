@@ -19,7 +19,7 @@ export default function Contact({}: Props) {
   }
   
 
-async function handleOnSubmit(e: React.ChangeEvent<HTMLInputElement>){
+async function handleOnSubmit(e: { preventDefault: () => void; currentTarget: Iterable<unknown> | ArrayLike<unknown>; }){
   e.preventDefault();
   const formData = {}
   Array.from(e.currentTarget).forEach(field => {

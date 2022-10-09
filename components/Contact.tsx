@@ -86,7 +86,7 @@ async function handleOnSubmit(e){
           {isSubmitting && isAlertVisible && <div className='absolute bottom-12 md:bottom-40 '>
               <div className='text-white flex gap-4 flex-row md:flex-col'>
                 <p>Message submitted.</p>
-                <p>I'll be in touch soon!</p>
+                <p>I will be in touch soon!</p>
               </div>
           </div>}
       <footer className="bg-transparent absolute text-neutral-400 font-light uppercase tracking-widest text-xs md:text-sm bottom-0 p-5 flex mx-auto max-w-7xl justify-between w-full z-20">

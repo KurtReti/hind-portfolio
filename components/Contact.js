@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 import hind from "../imgs/299840913_394351786179451_4446314775862409124_n.jpeg"
 import contactimg from "../imgs/contact img.png"
 
-type Props = {};
 
-export default function Contact({}: Props) {
+export default function Contact({}) {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [ isAlertVisible, setIsAlertVisible ] = React.useState(false);
@@ -19,9 +18,10 @@ export default function Contact({}: Props) {
   }
   
 
-async function handleOnSubmit(e: { preventDefault: () => void; currentTarget: Iterable<unknown> | ArrayLike<unknown>; }){
+async function handleOnSubmit(e){
   e.preventDefault();
-  const formData = {}
+  const formData = {};
+
   Array.from(e.currentTarget).forEach(field => {
     if ( !field.name ) return;
     formData[field.name] = field.value;

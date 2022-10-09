@@ -32,6 +32,16 @@ export default function Hero({}: Props) {
          <Background />
 
       <div className='relative text-2xl uppercase font-light -top-32 text-white flex flex-row space-x-4 md:space-x-12 -top-10'>
+      
+        <Link href="#showreel">
+        <button className="heroButton uppercase">Showreel</button>
+        </Link>
+
+        <Link href="#projects">
+        <button className="heroButton uppercase">Projects</button>
+        </Link>
+
+
         <Link href="#about">
         <button className="heroButton uppercase">About</button>
         </Link>
@@ -40,13 +50,8 @@ export default function Hero({}: Props) {
         <button className="heroButton uppercase font-light">Resume</button>
         </Link>
 
-        <Link href="#projects">
-        <button className="heroButton uppercase">Projects</button>
-        </Link>
-
-        <Link href="#showreel">
-        <button className="heroButton uppercase">Showreel</button>
-        </Link>
+       
+        
 
 
       </div>

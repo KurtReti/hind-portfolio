@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import hind from "../imgs/299840913_394351786179451_4446314775862409124_n.jpeg"
@@ -7,20 +7,35 @@ import contactimg from "../imgs/contact img.png"
 type Props = {};
 
 export default function Contact({}: Props) {
-  async function handleOnSubmit(e){
-    e.preventDefault();
-    const formData = {}
-    Array.from(e.currentTarget).forEach(field => {
-      if ( !field.name ) return;
-      formData[field.name] = field.value;
-    });
-    fetch('/api/mail', {
-      method: 'post',
-      body: JSON.stringify(formData)
-    })
-    
-    console.log(formData);
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [ isAlertVisible, setIsAlertVisible ] = React.useState(false);
+
+  const showAlert = () => {
+     setIsAlertVisible(true);
+     setTimeout(() => {
+                  setIsAlertVisible(false);
+              }, 3000);
   }
+  
+
+async function handleOnSubmit(e){
+  e.preventDefault();
+  const formData = {}
+  Array.from(e.currentTarget).forEach(field => {
+    if ( !field.name ) return;
+    formData[field.name] = field.value;
+    field.value="";
+  });
+  fetch('/api/mail', {
+    method: 'post',
+    body: JSON.stringify(formData)
+  })
+  setIsSubmitting(true);
+  setTimeout(setIsSubmitting, 10000)
+  
+  console.log(formData);
+}
     
   return (
     <div className="h-screen flex text-white flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center">
@@ -61,11 +76,19 @@ export default function Contact({}: Props) {
               <textarea className="px-2 py-2 text-sm bg-transparent border border-white md:ml-4 w-full h-80 md:h-48 " name="message" />
        
             </div>
-            <button className="border h-8 mt-8 active:border-2  border-white px-4 py-1 uppercase font-light" >
+            <button disabled={isSubmitting} onClick={showAlert} className="border h-8 mt-8 active:border-2  border-white px-4 py-1 uppercase font-light" >
               Submit
             </button>
             
+            
           </form>
+
+          {isSubmitting && isAlertVisible && <div className='absolute bottom-12 md:bottom-40 '>
+              <div className='text-white flex gap-4 flex-row md:flex-col'>
+                <p>Message submitted.</p>
+                <p>I'll be in touch soon!</p>
+              </div>
+          </div>}
       <footer className="bg-transparent absolute text-neutral-400 font-light uppercase tracking-widest text-xs md:text-sm bottom-0 p-5 flex mx-auto max-w-7xl justify-between w-full z-20">
         <p> All rights reserved <a className="text-neutral-500 cursor-pointer ">Issak Hindson</a></p>
         <p> Developed by <a className="text-neutral-500 cursor-pointer ">Kurt Reti</a></p>

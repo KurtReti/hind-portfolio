@@ -9,7 +9,7 @@ export default function ProjectCard({}: Props) {
     <article className=' text-white h-full opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden snap-center  bg-black flex flex-col md:flex-row  rounded-lg flex-shrink-0 w-full'>
    
         <div className='h-2/5 max-h-0.5 md:h-full bg-black md:w-3/5'>
-            <Image src={whoarewe}/>
+            <Image height="12px" width="12px"src={whoarewe}/>
         </div>
         <div className='h-2/5 mt-auto md:h-full bg-black md:w-2/5 flex flex-col text-white p-10'>
             <h1 className='text-4xl md:text-5xl uppercase font-light tracking-[10px]'>Who are we</h1>

@@ -38,7 +38,7 @@ async function handleOnSubmit(e){
 }
     
   return (
-    <div className="h-screen flex text-white flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen flex text-white flex-col relative text-center md:text-left md:flex-row  px-8 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -52,26 +52,26 @@ async function handleOnSubmit(e){
         viewport={{
             once: true
         }}
-        className="absolute top-28 text-neutral-900 xl:text-white z-10 uppercase tracking-[20px]"
+        className="absolute top-20 text-neutral-900 z-10 uppercase tracking-[20px]"
       >
         Contact Me
       </motion.h3>
         <div className="absolute hidden md:block z-0 left-0">
-         <Image src={contactimg}/>
+         <Image priority={true} src={contactimg}/>
         </div>
 
-          <form className="backdrop-grayscale flex flex-col mt-12 md:mt-0 backdrop-blur-sm border md:bg-transparent w-full md:w-auto bg-neutral-800  relative z-10 border-white px-12 py-8 " method="post" onSubmit={handleOnSubmit}>
+          <form className="backdrop-grayscale flex flex-col items-center mt-12 md:mt-0 backdrop-blur-sm border md:bg-transparent w-full md:w-auto bg-neutral-800  relative z-10 border-white px-4 md:px-12 py-8 " method="post" onSubmit={handleOnSubmit}>
             <div className="w-full justify-start flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
               <p>
                 <label className="uppercase font-light tracking-widest " htmlFor="name">Name</label>
-                <input className="text-sm py-1 px-2 bg-transparent border-b border-white ml-4 " type="text" name="name" />
+                <input className="text-sm w-full py-1 px-2 bg-transparent border-b border-white md:ml-4 " type="text" name="name" />
               </p>
               <p>
               <label className="uppercase font-light tracking-widest " htmlFor="email">Email</label>
-                <input className="text-sm py-1 px-2 bg-transparent border-b border-white ml-4 " type="email" name="email"/>
+                <input className="text-sm w-full py-1 px-2 bg-transparent border-b border-white md:ml-4 " type="email" name="email"/>
               </p>
             </div>
-            <div className="flex align space-y-4 md:space-y-0 flex-col md:flex-row mt-4">
+            <div className="flex align w-full space-y-4 md:space-y-0 flex-col md:flex-row mt-4">
               <label className="self-start uppercase font-light tracking-widest" htmlFor="message">Message</label>
               <textarea className="px-2 py-2 text-sm bg-transparent border border-white md:ml-4 w-full h-80 md:h-48 " name="message" />
        

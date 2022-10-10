@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return(
-   <header className="bg-neutral-50 sticky top-0 p-5 flex items-center justify-between  mx-auto z-20 xl:items-center">
+   <header className=" sticky top-0 p-5 flex items-center justify-between  mx-auto z-20 xl:items-center">
 
     <motion.div
     initial={{
@@ -41,7 +41,7 @@ export default function Header({}: Props) {
         duration: 2,
         delay: 1
     }}
-    className=" tracking-widest cursor-pointer uppercase text-2xl md:text-3xl font-light text-neutral-600" 
+    className=" tracking-widest hidden md:block cursor-pointer uppercase text-2xl md:text-3xl font-light text-neutral-600" 
 >
     <Link href="#hero">
     Issak Hindson

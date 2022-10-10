@@ -43,7 +43,7 @@ export default function About({}: Props) {
         viewport={{
             once:true
         }}
-       className=" overflow-hidden"
+       className=" overflow-hidden pt-10"
        >
        
             <Image

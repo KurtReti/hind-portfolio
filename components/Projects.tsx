@@ -32,7 +32,7 @@ export default function Projects({}: Props) {
       </motion.h3>
 
 
-      <div className="w-full h-4/5 mt-auto mb-10 space-x-5 flex overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-track-neutral-50 scrollbar-thumb-neutral-300">
+      <div className="w-full h-4/5 mt-40 mb-10 space-x-5 flex overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-track-neutral-50 scrollbar-thumb-neutral-900">
           <WhoAreWe />
           <MurderMystery />
           <HorrificallyBeautiful />

@@ -54,7 +54,7 @@ Studied at SAE for two years doing a bachelor of film I worked under professiona
 
         <div className="self-start w-96">
           <h1 className="uppercase text-5xl font-light ">Skills and Expertise</h1>
-        <ul className="px-8 list-disc text-sm mt-4 space-y-2 text-justify">
+        <ul className="px-12 list-disc text-sm mt-4 space-y-2 text-justify">
           <li>Collaborative able to work with all departments to produce the highest quality product</li>
 
           <li>Team player works well with others</li>

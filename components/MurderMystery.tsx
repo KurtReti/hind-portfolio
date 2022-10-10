@@ -11,7 +11,7 @@ export default function MurderMystery({}: Props) {
         <div className='h-2/5 md:h-full bg-black md:w-4/5'>
             <Image priority={true} src={whoarewe}/>
         </div>
-        <div className='h-2/5 mt-8 md:h-full bg-black md:w-2/5 flex flex-col text-white p-10'>
+        <div className='h-2/5 mt-8 md:h-full bg-black md:w-2/5 flex flex-col text-white p-6'>
             <h1 className='text-3xl md:text-5xl uppercase font-light tracking-[10px]'>Murder Mystery</h1>
             <h2 className='text-xl opacity-50 uppercase font-extralight tracking-[5px]'>Writer</h2>
             <p className='relative py-2 tracking-[10px] opacity-30'> 2020 </p>

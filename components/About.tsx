@@ -21,7 +21,7 @@ export default function About({}: Props) {
         viewport={{
             once: true
         }}
-        className="absolute top-24 uppercase tracking-[20px]"
+        className="absolute hidden md:block top-24 uppercase tracking-[20px]"
       >
         About
       </motion.h3>

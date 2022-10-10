@@ -11,7 +11,7 @@ export default function ProjectCard({}: Props) {
         <div className='h-2/5 max-h-0.5 md:h-full bg-black md:w-3/5'>
             <Image height="12px" width="12px"src={whoarewe}/>
         </div>
-        <div className='h-2/5 mt-auto md:h-full bg-black md:w-2/5 flex flex-col text-white p-10'>
+        <div className='h-2/5 mt-8 md:h-full bg-black md:w-2/5 flex flex-col text-white p-6'>
             <h1 className='text-4xl md:text-5xl uppercase font-light tracking-[10px]'>Who are we</h1>
             <h2 className='text-2xl opacity-50 uppercase font-extralight tracking-[5px]'>Assistant Director / Editor</h2>
             <p className='relative py-2 tracking-[10px] opacity-30'> 2021 </p>

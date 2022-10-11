@@ -28,7 +28,7 @@ export default function Hero({}: Props) {
         className='absolute z-10 top-0 bg-neutral-50 h-screen w-screen'>
           
         </motion.div>
-        
+        <p className='uppercase text-3xl font-light pb-20'>Filmmaker</p>
          <Background />
 
       <div className='relative -space-x-4 text-2xl uppercase font-light -top-32 text-white flex flex-row md:space-x-12 -top-10'>

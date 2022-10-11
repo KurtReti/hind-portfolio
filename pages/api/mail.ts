@@ -20,7 +20,7 @@ export default function handler(
   `;
 
   const data = {
-    to: 'kurt.reti@gmail.com',
+    to: 'issakhindson@gmail.com',
     from: 'hello@issakhfilms.com',
     subject: 'New web form message!',
     text: message,

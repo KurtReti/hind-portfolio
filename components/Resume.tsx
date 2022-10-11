@@ -48,13 +48,13 @@ export default function Resume({}: Props) {
         <div className="self-start w-96">
           <h1 className="uppercase text-5xl font-light">Education</h1>
           <h2 className="uppercase py-4 font-light text-xl">Bachelor of film 2021-2022</h2>
-          <p className="text-sm px-8 text-justify">
+          <p className="text-sm px-8 md:px-0 text-justify">
 Studied at SAE for two years doing a bachelor of film I worked under professional leaders and with industry standard equipment.          </p>
         </div>
 
         <div className="self-start w-96">
           <h1 className="uppercase text-5xl font-light ">Skills and Expertise</h1>
-        <ul className="px-12 list-disc text-sm mt-4 space-y-2 text-justify">
+        <ul className="px-12 md:px-0 list-disc text-sm mt-4 space-y-2 text-justify">
           <li>Collaborative able to work with all departments to produce the highest quality product</li>
 
           <li>Team player works well with others</li>

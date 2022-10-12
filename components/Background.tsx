@@ -15,18 +15,21 @@ export default function Background({}: Props) {
     
         <div className='relative hidden xl:block'>
             <Image
+                priority={true}
                 src={heroImg}
                 alt="Picture of the author"
             />
         </div>
         <div className='relative hidden md:block xl:hidden'>
             <Image
+                priority={true}
                 src={heroImgMobile}
                 alt="Picture of the author"
             />
         </div>
         <div className='relative block md:hidden'>
             <Image
+                 priority={true}
                 src={heroImgTiny}
                 alt="Picture of the author"
             />

@@ -46,7 +46,7 @@ export default function About({}: Props) {
        className=" overflow-hidden pt-10"
        >
        
-            <Image
+            <Image priority={true}
             src={hind} />
         </motion.div>
       

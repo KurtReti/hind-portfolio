@@ -29,7 +29,7 @@ export default function Background({}: Props) {
         </div>
         <div className='relative block md:hidden'>
             <Image
-                 priority={true}
+                priority={true}
                 src={heroImgTiny}
                 alt="Picture of the author"
             />
